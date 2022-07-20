@@ -19,5 +19,8 @@
     <TabItem Header="Vector3KeyFrameAnimation">
       <pages:Vector3KeyFrameAnimationPage />
     </TabItem>
+    <TabItem Header="ExpressionAnimation">
+      <pages:ExpressionAnimationPage />
+    </TabItem>
   </TabControl>
 </Window>

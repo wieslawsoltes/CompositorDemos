@@ -8,4 +8,3 @@
     <Border Name="Border" Background="Red" Width="100" Height="100" />
   </Canvas>
 </UserControl>
-

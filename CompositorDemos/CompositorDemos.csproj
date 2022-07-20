@@ -8,14 +8,14 @@
     <AvaloniaVersion>0.10.999-cibuild0022234-beta</AvaloniaVersion>
   </PropertyGroup>
   <ItemGroup>
-    <TrimmableAssembly Include="Avalonia.Themes.Fluent"/>
-    <TrimmableAssembly Include="Avalonia.Themes.Default"/>
+    <TrimmableAssembly Include="Avalonia.Themes.Fluent" />
+    <TrimmableAssembly Include="Avalonia.Themes.Default" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="$(AvaloniaVersion)"/>
-    <PackageReference Include="Avalonia.Desktop" Version="$(AvaloniaVersion)"/>
-    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="$(AvaloniaVersion)"/>
-    <PackageReference Include="Avalonia.Themes.Fluent" Version="$(AvaloniaVersion)"/>
-    <PackageReference Include="XamlNameReferenceGenerator" Version="1.3.4"/>
+    <PackageReference Include="Avalonia" Version="$(AvaloniaVersion)" />
+    <PackageReference Include="Avalonia.Desktop" Version="$(AvaloniaVersion)" />
+    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="$(AvaloniaVersion)" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="$(AvaloniaVersion)" />
+    <PackageReference Include="XamlNameReferenceGenerator" Version="1.3.4" />
   </ItemGroup>
 </Project>

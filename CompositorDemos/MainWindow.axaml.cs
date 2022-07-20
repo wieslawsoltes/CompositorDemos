@@ -11,5 +11,7 @@ public partial class MainWindow : Window
 #if DEBUG
         this.AttachDevTools();
 #endif
+        Renderer.DrawFps = true;
+        Renderer.DrawDirtyRects = false;
     }
 }

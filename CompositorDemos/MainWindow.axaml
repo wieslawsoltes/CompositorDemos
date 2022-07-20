@@ -2,9 +2,23 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
+        mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="600"
         x:Class="CompositorDemos.MainWindow"
-        Width="800" Height="600" WindowStartupLocation="CenterScreen"
+        Width="1200" Height="600" WindowStartupLocation="CenterScreen"
         Title="CompositorDemos">
-
+  <TabControl TabStripPlacement="Top">
+    <TabControl.Styles>
+      <Style Selector="TabItem">
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Padding" Value="2"/>
+        <Setter Property="MinHeight" Value="32" />
+        <Setter Property="(TextElement.FontSize)" Value="12"/>
+      </Style>
+    </TabControl.Styles>
+    <TabItem Header="Vector3KeyFrameAnimation">
+      <Canvas Background="WhiteSmoke">
+        <Border Name="Border" Background="Red" Width="100" Height="100" />
+      </Canvas>
+    </TabItem>
+  </TabControl>
 </Window>

@@ -9,4 +9,3 @@
     <Border Name="Border" Background="Red" Width="200" Height="200" />
   </DockPanel>
 </UserControl>
-

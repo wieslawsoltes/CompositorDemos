@@ -21,13 +21,13 @@ public partial class MainWindow : Window
 
     private void BorderOnAttachedToVisualTree(object? sender, VisualTreeAttachmentEventArgs e)
     {
-        var redVisual = ElementComposition.GetElementVisual(Border);
-        if (redVisual is null)
+        var compositionVisual = ElementComposition.GetElementVisual(Border);
+        if (compositionVisual is null)
         {
             return;
         }
 
-        var compositor = redVisual.Compositor;
+        var compositor = compositionVisual.Compositor;
 
         var animation = compositor.CreateVector3KeyFrameAnimation();
         animation.InsertKeyFrame(1f, new Vector3(200f, 0f, 0f));
@@ -35,6 +35,8 @@ public partial class MainWindow : Window
         animation.Direction = PlaybackDirection.Alternate;
         animation.IterationCount = 10;
 
-        redVisual.StartAnimation("Offset", animation);
+        compositionVisual.StartAnimation("Offset", animation);
+        
+        
     }
 }

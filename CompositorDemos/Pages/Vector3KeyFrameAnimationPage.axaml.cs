@@ -13,7 +13,6 @@ public partial class Vector3KeyFrameAnimationPage : UserControl
     {
         InitializeComponent();
 
-        
         Border.AttachedToVisualTree += BorderOnAttachedToVisualTree;
     }
 
@@ -36,4 +35,3 @@ public partial class Vector3KeyFrameAnimationPage : UserControl
         compositionVisual.StartAnimation("Offset", animation);
     }
 }
-

@@ -34,6 +34,7 @@ public partial class MainWindow : Window
         animation.Duration = TimeSpan.FromSeconds(2);
         animation.Direction = PlaybackDirection.Alternate;
         animation.IterationCount = 10;
+
         redVisual.StartAnimation("Offset", animation);
     }
 }

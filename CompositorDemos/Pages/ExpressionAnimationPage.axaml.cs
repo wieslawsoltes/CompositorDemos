@@ -35,7 +35,7 @@ public partial class ExpressionAnimationPage : UserControl
 
         var compositor = compositionVisual.Compositor;
 
-        var animation = compositor.CreateExpressionAnimation("this.Target.Size.X / Window.Size.X");
+        var animation = compositor.CreateExpressionAnimation("Clamp(this.Target.Size.X / Window.Size.X, 0.0, 1.0)");
         animation.SetReferenceParameter("Window", compositionVisualWindow);
 
         compositionVisual.StartAnimation("Opacity", animation);

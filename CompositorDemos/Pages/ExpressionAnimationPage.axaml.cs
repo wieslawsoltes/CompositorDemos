@@ -10,12 +10,13 @@ public partial class ExpressionAnimationPage : UserControl
     public ExpressionAnimationPage()
     {
         InitializeComponent();
-
+         
         Border.AttachedToVisualTree += BorderOnAttachedToVisualTree;
     }
 
     private void BorderOnAttachedToVisualTree(object? sender, VisualTreeAttachmentEventArgs e)
     {
+        
         var compositionVisual = ElementComposition.GetElementVisual(Border);
         if (compositionVisual is null)
         {

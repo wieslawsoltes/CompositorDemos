@@ -3,6 +3,6 @@
              x:Class="CompositorDemos.App"
              Name="CompositorDemos">
   <Application.Styles>
-    <FluentTheme Mode="Light" />
+    <FluentTheme Mode="Light"/>
   </Application.Styles>
 </Application>

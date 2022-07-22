@@ -26,7 +26,7 @@ public partial class ExpressionAnimationPage : UserControl
         {
             return;
         }
-        
+
         var compositionVisualWindow = ElementComposition.GetElementVisual(visualRoot);
         if (compositionVisualWindow is null)
         {

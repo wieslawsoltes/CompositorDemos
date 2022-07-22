@@ -3,13 +3,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:models="clr-namespace:CompositorDemos.Models"
+             xmlns:converters="clr-namespace:CompositorDemos.Converters"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="CompositorDemos.Pages.ParallaxScrollingPage" Loaded="Page_Loaded"
              Unloaded="Page_Unloaded">
   <ListBox x:Name="ThumbnailList"
            VirtualizationMode="None"
            MaxWidth="400">
-    
     <ListBox.ItemTemplate>
       <DataTemplate x:DataType="models:Thumbnail">
         <RelativePanel Width="320" Height="240">
@@ -21,10 +21,10 @@
             <Canvas.Clip>
               <RectangleGeometry Rect="0, 25, 360, 185" />
             </Canvas.Clip>
-            <Image Source="../Assets/Landscapes/Landscape-1.jpg"
+            <Image Source="{Binding ImageUrl, Converter={x:Static converters:ImageUrlConverter.Instance}}"
                    Width="450"
                    Height="450"
-                   Stretch="UniformToFill" />
+                   Stretch="Uniform" />
           </Canvas>
           <TextBlock RelativePanel.AlignBottomWithPanel="True"
                      RelativePanel.AlignRightWithPanel="True"

@@ -1,11 +1,9 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.Generators;
-using Avalonia.Controls.Templates;
 using Avalonia.Interactivity;
 using Avalonia.Rendering.Composition;
 using Avalonia.VisualTree;
@@ -23,15 +21,19 @@ public partial class ParallaxScrollingPage : UserControl
 
         ThumbnailList.Items = new List<Thumbnail>
         {
-            new Thumbnail("Land 1", ""),
-            new Thumbnail("Land 1", ""),
-            new Thumbnail("Land 1", ""),
-            new Thumbnail("Land 1", ""),
-            new Thumbnail("Land 1", ""),
-            new Thumbnail("Land 1", ""),
-            new Thumbnail("Land 1", ""),
-            new Thumbnail("Land 1", ""),
-            new Thumbnail("Land 1", ""),
+            new ("Landscape 1", "/Assets/Landscapes/Landscape-1.jpg"),
+            new ("Landscape 2", "/Assets/Landscapes/Landscape-2.jpg"),
+            new ("Landscape 3", "/Assets/Landscapes/Landscape-3.jpg"),
+            new ("Landscape 4", "/Assets/Landscapes/Landscape-4.jpg"),
+            new ("Landscape 5", "/Assets/Landscapes/Landscape-5.jpg"),
+            new ("Landscape 6", "/Assets/Landscapes/Landscape-6.jpg"),
+            new ("Landscape 7", "/Assets/Landscapes/Landscape-7.jpg"),
+            new ("Landscape 8", "/Assets/Landscapes/Landscape-8.jpg"),
+            new ("Landscape 9", "/Assets/Landscapes/Landscape-9.jpg"),
+            new ("Landscape 10", "/Assets/Landscapes/Landscape-10.jpg"),
+            new ("Landscape 11", "/Assets/Landscapes/Landscape-11.jpg"),
+            new ("Landscape 12", "/Assets/Landscapes/Landscape-12.jpg"),
+            new ("Landscape 13", "/Assets/Landscapes/Landscape-13.jpg"),
         };
     }
 

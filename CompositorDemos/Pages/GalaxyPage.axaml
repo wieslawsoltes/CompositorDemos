@@ -1,0 +1,38 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="CompositorDemos.Pages.GalaxyPage">
+  <Grid Background="Black">
+    <Ellipse Width="50" Height="50" Fill="Orange" />
+    <Grid Name="StarField">
+      <Rectangle Width="15" Height="15" Fill="Yellow">
+        <Rectangle.RenderTransform>
+          <TranslateTransform X="200" Y="120" />
+        </Rectangle.RenderTransform>
+      </Rectangle>
+      <Rectangle Width="5" Height="5" Fill="Yellow">
+        <Rectangle.RenderTransform>
+          <TranslateTransform X="-200" Y="150" />
+        </Rectangle.RenderTransform>
+      </Rectangle>
+      <Rectangle Width="10" Height="10" Fill="Yellow">
+        <Rectangle.RenderTransform>
+          <TranslateTransform X="-150" Y="-150" />
+        </Rectangle.RenderTransform>
+      </Rectangle>
+      <Rectangle Width="5" Height="5" Fill="Yellow">
+        <Rectangle.RenderTransform>
+          <TranslateTransform X="150" Y="-200" />
+        </Rectangle.RenderTransform>
+      </Rectangle>
+    </Grid>
+    <Grid Name="Orbit">
+      <Grid Name="Planet">
+        <Ellipse Width="30" Height="30" Fill="DarkGreen" />
+        <Ellipse Name="Satellite" Width="15" Height="15" Fill="DarkGray" />
+      </Grid>
+    </Grid>
+  </Grid>
+</UserControl>

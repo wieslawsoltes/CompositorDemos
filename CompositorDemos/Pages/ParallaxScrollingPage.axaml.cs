@@ -42,7 +42,7 @@ public partial class ParallaxScrollingPage : UserControl
             return;
         }
 
-        lbi.Loaded += delegate
+        lbi.Loaded += (_, _) =>
         {
             var image = lbi.GetVisualDescendants().OfType<Image>().First();
             var scrollViewer = lbi.GetVisualAncestors().OfType<ScrollViewer>().First();

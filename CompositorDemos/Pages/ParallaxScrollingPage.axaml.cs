@@ -18,7 +18,9 @@ public partial class ParallaxScrollingPage : UserControl
     public ParallaxScrollingPage()
     {
         InitializeComponent();
+
         ThumbnailList.ItemContainerGenerator.Materialized += ItemContainerGeneratorOnMaterialized;
+
         ThumbnailList.Items = new List<Thumbnail>
         {
             new Thumbnail("Land 1", ""),

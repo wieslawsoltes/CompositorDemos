@@ -30,7 +30,7 @@ public partial class Vector3KeyFrameAnimationPage : UserControl
         animation.InsertKeyFrame(1f, new Vector3(200f, 0f, 0f));
         animation.Duration = TimeSpan.FromSeconds(2);
         animation.Direction = PlaybackDirection.Alternate;
-        animation.IterationCount = 10;
+        animation.IterationCount = int.MaxValue;
 
         compositionVisual.StartAnimation("Offset", animation);
     }

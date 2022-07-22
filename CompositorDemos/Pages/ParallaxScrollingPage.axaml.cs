@@ -51,7 +51,6 @@ public partial class ParallaxScrollingPage : UserControl
             if (ElementComposition.GetElementVisual(scrollViewer) is not { }) return;
             if (this.GetVisualRoot() is not Visual visualRoot) return;
 
-        
             var compositionVisualWindow = ElementComposition.GetElementVisual(visualRoot);
             if (compositionVisualWindow is null)
             {

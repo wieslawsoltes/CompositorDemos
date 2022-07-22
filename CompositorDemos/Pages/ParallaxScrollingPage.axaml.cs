@@ -48,7 +48,7 @@ public partial class ParallaxScrollingPage : UserControl
             var scrollViewer = lbi.GetVisualAncestors().OfType<ScrollViewer>().First();
 
             if (ElementComposition.GetElementVisual(image) is not { } imageComp) return;
-            if (ElementComposition.GetElementVisual(scrollViewer) is not { } svComp) return;
+            if (ElementComposition.GetElementVisual(scrollViewer) is not { }) return;
             if (this.GetVisualRoot() is not Visual visualRoot) return;
 
         

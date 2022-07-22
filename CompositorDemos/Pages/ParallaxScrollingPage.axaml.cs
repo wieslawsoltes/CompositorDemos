@@ -68,6 +68,7 @@ public partial class ParallaxScrollingPage : UserControl
 
     private void Page_Unloaded(object? sender, RoutedEventArgs e)
     {
+        // TODO:
     }
 
     private void Page_Loaded(object? _, RoutedEventArgs __)

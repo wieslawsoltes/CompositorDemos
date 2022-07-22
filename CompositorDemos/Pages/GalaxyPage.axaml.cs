@@ -74,7 +74,7 @@ public partial class GalaxyPage : UserControl
 
         this.GetObservable(BoundsProperty).Subscribe(x =>
         {
-            // _orbitVisual.CenterPoint = new Vector3((float)x.Width / 2, (float)x.Height / 2, 0);
+            // TODO: _orbitVisual.CenterPoint = new Vector3((float)x.Width / 2, (float)x.Height / 2, 0);
         });
     }
 }

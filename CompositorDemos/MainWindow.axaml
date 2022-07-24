@@ -19,6 +19,9 @@
     <TabItem Header="ParallaxScrolling">
       <pages:ParallaxScrollingPage />
     </TabItem>
+    <TabItem Header="Galaxy">
+      <pages:GalaxyPage />
+    </TabItem>
     <TabItem Header="Vector3KeyFrameAnimation">
       <pages:Vector3KeyFrameAnimationPage />
     </TabItem>

@@ -72,9 +72,10 @@ public partial class GalaxyPage : UserControl
         starsAnimation.SetReferenceParameter("orbitVisual", _orbitVisual);
         starsVisual.StartAnimation(nameof(CompositionVisual.Opacity), starsAnimation);
 
-        this.GetObservable(BoundsProperty).Subscribe(x =>
+        this.GetObservable(BoundsProperty).Subscribe(_ =>
         {
-            // TODO: _orbitVisual.CenterPoint = new Vector3((float)x.Width / 2, (float)x.Height / 2, 0);
+            // _orbitVisual.CenterPoint = new Vector3((float)Bounds.Width / 2, (float)Bounds.Height / 2, 0);
+            // satelliteVisual.CenterPoint = new Vector3((float)Satellite.Bounds.Width / 2, (float)Satellite.Bounds.Height / 2, 0);
         });
     }
 }

@@ -5,7 +5,7 @@
     <Nullable>enable</Nullable>
     <TrimMode>copyused</TrimMode>
     <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
-    <AvaloniaVersion>0.10.999-cibuild0022876-beta</AvaloniaVersion>
+    <AvaloniaVersion>0.10.999-cibuild0023056-beta</AvaloniaVersion>
   </PropertyGroup>
   <ItemGroup>
     <TrimmableAssembly Include="Avalonia.Themes.Fluent" />

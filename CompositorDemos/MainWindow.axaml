@@ -3,9 +3,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:pages="clr-namespace:CompositorDemos.Pages"
-        mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="600"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
         x:Class="CompositorDemos.MainWindow"
-        Width="1200" Height="600" WindowStartupLocation="CenterScreen"
+        Width="800" Height="600" WindowStartupLocation="CenterScreen"
         Title="CompositorDemos">
   <TabControl Margin="0,20,0,0" TabStripPlacement="Top">
     <TabControl.Styles>

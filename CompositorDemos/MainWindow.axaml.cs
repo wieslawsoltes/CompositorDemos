@@ -13,5 +13,6 @@ public partial class MainWindow : Window
         this.AttachDevTools();
 #endif
         Renderer.Diagnostics.DebugOverlays = RendererDebugOverlays.Fps;
+        // Renderer.Diagnostics.DebugOverlays = RendererDebugOverlays.Fps | RendererDebugOverlays.LayoutTimeGraph | RendererDebugOverlays.RenderTimeGraph;
     }
 }

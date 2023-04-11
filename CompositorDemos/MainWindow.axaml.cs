@@ -1,5 +1,6 @@
 using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Rendering;
 
 namespace CompositorDemos;
 
@@ -11,7 +12,6 @@ public partial class MainWindow : Window
 #if DEBUG
         this.AttachDevTools();
 #endif
-        Renderer.DrawFps = true;
-        Renderer.DrawDirtyRects = false;
+        Renderer.Diagnostics.DebugOverlays = RendererDebugOverlays.Fps;
     }
 }

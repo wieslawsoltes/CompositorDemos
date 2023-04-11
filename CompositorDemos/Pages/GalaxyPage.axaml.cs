@@ -4,6 +4,7 @@ using Avalonia;
 using Avalonia.Animation.Easings;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
+using Avalonia.Reactive;
 using Avalonia.Rendering.Composition;
 using Avalonia.Rendering.Composition.Animations;
 
@@ -72,10 +73,11 @@ public partial class GalaxyPage : UserControl
         starsAnimation.SetReferenceParameter("orbitVisual", _orbitVisual);
         starsVisual.StartAnimation(nameof(CompositionVisual.Opacity), starsAnimation);
 
-        this.GetObservable(BoundsProperty).Subscribe(_ =>
-        {
-            // _orbitVisual.CenterPoint = new Vector3((float)Bounds.Width / 2, (float)Bounds.Height / 2, 0);
-            // satelliteVisual.CenterPoint = new Vector3((float)Satellite.Bounds.Width / 2, (float)Satellite.Bounds.Height / 2, 0);
-        });
+        this.GetObservable(BoundsProperty).Subscribe(new AnonymousObserver<Rect>(
+            _ =>
+            {
+                // _orbitVisual.CenterPoint = new Vector3((float)Bounds.Width / 2, (float)Bounds.Height / 2, 0);
+                // satelliteVisual.CenterPoint = new Vector3((float)Satellite.Bounds.Width / 2, (float)Satellite.Bounds.Height / 2, 0);
+            }));
     }
 }

@@ -6,43 +6,43 @@ using Avalonia.Controls;
 using Avalonia.Rendering.Composition;
 using Avalonia.Rendering.Composition.Animations;
 
-namespace CompositorDemos.Pages;
+namespace CompositorDemos.Animations;
 
-public static class Animator
+public static class SlidingAnimation
 {
-    public static void SetLeftSlidingAnimation(Control element, double milliseconds)
+    public static void SetLeft(Control element, double milliseconds)
     {
         element.Loaded += (_, _) =>
         {
-            ApplySlidingPageAnimation(element, -element.Bounds.Width, 0, TimeSpan.FromMilliseconds(milliseconds));
+            Apply(element, -element.Bounds.Width, 0, TimeSpan.FromMilliseconds(milliseconds));
         };
     }
 
-    public static void SetRightSlidingAnimation(Control element, double milliseconds)
+    public static void SetRight(Control element, double milliseconds)
     {
         element.Loaded += (_, _) =>
         {
-            ApplySlidingPageAnimation(element, 2 * element.Bounds.Width, 0, TimeSpan.FromMilliseconds(milliseconds));
+            Apply(element, 2 * element.Bounds.Width, 0, TimeSpan.FromMilliseconds(milliseconds));
         };
     }
 
-    public static void SetTopSlidingAnimation(Control element, double milliseconds)
+    public static void SetTop(Control element, double milliseconds)
     {
         element.Loaded += (_, _) =>
         {
-            ApplySlidingPageAnimation(element, 0, -element.Bounds.Height, TimeSpan.FromMilliseconds(milliseconds));
+            Apply(element, 0, -element.Bounds.Height, TimeSpan.FromMilliseconds(milliseconds));
         };
     }
 
-    public static void SetBottomSlidingAnimation(Control element, double milliseconds)
+    public static void SetBottom(Control element, double milliseconds)
     {
         element.Loaded += (_, _) =>
         {
-            ApplySlidingPageAnimation(element, 0, 2 * element.Bounds.Height, TimeSpan.FromMilliseconds(milliseconds));
+            Apply(element, 0, 2 * element.Bounds.Height, TimeSpan.FromMilliseconds(milliseconds));
         };
     }
 
-    private static void ApplySlidingPageAnimation(Visual visual, double offsetX, double offsetY, TimeSpan duration)
+    private static void Apply(Visual visual, double offsetX, double offsetY, TimeSpan duration)
     {
         var compositionVisual = ElementComposition.GetElementVisual(visual);
         if (compositionVisual is null)

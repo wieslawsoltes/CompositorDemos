@@ -16,11 +16,14 @@
         <Setter Property="(TextElement.FontSize)" Value="12"/>
       </Style>
     </TabControl.Styles>
-    <TabItem Header="Galaxy">
-      <pages:GalaxyPage />
+    <TabItem Header="Sliding">
+      <pages:SlidingAnimationPage />
     </TabItem>
     <TabItem Header="Vector3KeyFrameAnimation">
       <pages:Vector3KeyFrameAnimationPage />
+    </TabItem>
+    <TabItem Header="Galaxy">
+      <pages:GalaxyPage />
     </TabItem>
     <TabItem Header="ExpressionAnimation">
       <pages:ExpressionAnimationPage />

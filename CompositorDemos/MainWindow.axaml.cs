@@ -12,7 +12,7 @@ public partial class MainWindow : Window
 #if DEBUG
         this.AttachDevTools();
 #endif
-        Renderer.Diagnostics.DebugOverlays = RendererDebugOverlays.Fps;
-        // Renderer.Diagnostics.DebugOverlays = RendererDebugOverlays.Fps | RendererDebugOverlays.LayoutTimeGraph | RendererDebugOverlays.RenderTimeGraph;
+        RendererDiagnostics.DebugOverlays = RendererDebugOverlays.Fps;
+        // RendererDiagnostics.DebugOverlays = RendererDebugOverlays.Fps | RendererDebugOverlays.LayoutTimeGraph | RendererDebugOverlays.RenderTimeGraph;
     }
 }

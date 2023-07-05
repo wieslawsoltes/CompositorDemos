@@ -47,14 +47,14 @@ public partial class GalaxyPage : UserControl
         {
             return;
         }
-        planetVisual.TransformMatrix = Matrix4x4.CreateTranslation(new Vector3(100, 0, 0));
+        // TODO: planetVisual.TransformMatrix = Matrix4x4.CreateTranslation(new Vector3(100, 0, 0));
 
         var satelliteVisual = ElementComposition.GetElementVisual(Satellite);
         if (satelliteVisual is null)
         {
             return;
         }
-        satelliteVisual.TransformMatrix = Matrix4x4.CreateTranslation(new Vector3(30, 0, 0));
+        // TODO: satelliteVisual.TransformMatrix = Matrix4x4.CreateTranslation(new Vector3(30, 0, 0));
         satelliteVisual.CenterPoint = new Vector3((float)Satellite.Bounds.Width / 2, (float)Satellite.Bounds.Height / 2, 0);
 
         var satelliteAnimation = compositor.CreateExpressionAnimation();
